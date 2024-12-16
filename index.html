@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Path Unseen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            color: white;
+            text-align: center;
+            background-image: url('https://i.postimg.cc/9FD1y2rL/bb5535e2-2186-446a-8324-4ba64d4757f6.webp'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto; /* Allow vertical scrolling */
+            height: 100vh;
+        }
+
+        .poem-container {
+            max-width: 80%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            margin: 50px auto; /* Center container and allow space */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="poem-container" id="poem">
+        <h1>The Path Unseen</h1>
+        <p>Two paths diverged in a world remade,<br>
+           One forged by science, bright and clear,<br>
+           The other cloaked in faith’s charade,<br>
+           Where progress bent beneath the blade,<br>
+           And knowledge drowned in fear.</p>
+
+        <p>They chose the shadowed trail instead,<br>
+           Where reason’s light could never thrive.<br>
+           Books were burned, and minds were led<br>
+           By ancient laws the zealots fed,<br>
+           To keep the lie alive.</p>
+
+        <p>The labs fell silent, their doors locked tight,<br>
+           The cure for pain a banned refrain.<br>
+           No sterile tools, no healing light,<br>
+           No saving hands to mend the night—<br>
+           Just suffering ordained.</p>
+
+        <p>Yet still, some spark refused to fade,<br>
+           A secret whispered, deep and slow:<br>
+           The truth that science once conveyed<br>
+           Could not be killed, nor fully stayed,<br>
+           Its roots begin to grow.</p>
+
+        <p>And so, beneath the crimson tide,<br>
+           The seeds of reason find their ground.<br>
+           Though darkness claims the world outside,<br>
+           Through hidden acts, and quiet pride,<br>
+           The path unseen is found.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const poemContainer = document.getElementById("poem");
+            poemContainer.style.transition = "opacity 2s ease, transform 2s ease";
+            poemContainer.style.opacity = "1";
+            poemContainer.style.transform = "translateY(0)";
+        });
+    </script>
+</body>
+</html>
